@@ -32,7 +32,9 @@ base.fooController = function() {
             tds[2].textContent = viewModel.foo.amount;
 
             const d = viewModel.foo.createdDate;
-            tds[3].textContent = d.toLocaleDateString() + ' ' + d.toLocaleTimeString();
+            //tds[3].textContent = d.toLocaleDateString() + ' ' + d.toLocaleTimeString();
+            tds[3].textContent = d.toLocaleDateString();
+
             // TODO: Add stuff from lab 1 here
         };
     };

@@ -2,17 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a6f15bc8-ecf0-47a5-925c-15301281f04c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/lth/base/server/foo/Foo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/lth/base/server/foo/Foo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/lth/base/server/foo/FooDataAccess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/lth/base/server/foo/FooDataAccess.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/lth/base/server/foo/FooResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/lth/base/server/foo/FooResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/se/lth/base/server/database/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/se/lth/base/server/database/schema.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/webassets/foo/foo.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/webassets/foo/foo.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/webassets/foo/foo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/webassets/foo/foo.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/webassets/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/webassets/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/webassets/login/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/webassets/login/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/webassets/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/webassets/logo.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/se/lth/base/server/foo/FooDataAccessTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/se/lth/base/server/foo/FooDataAccessTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/se/lth/base/server/foo/FooResourceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/se/lth/base/server/foo/FooResourceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/webassets/foo/foo.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webassets/foo/foo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/webassets/foo/foo.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webassets/foo/foo.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +52,7 @@
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.folding" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RunManager" selected="Application.BaseServer">
     <configuration name="BaseServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -117,12 +113,17 @@
       <workItem from="1580842145807" duration="3529000" />
       <workItem from="1580920680517" duration="1429000" />
       <workItem from="1580925955599" duration="93000" />
-      <workItem from="1580926051425" duration="10567000" />
+      <workItem from="1580926051425" duration="11123000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/../.." />
+    </ignored-roots>
   </component>
   <component name="WindowStateProjectService">
     <state x="744" y="358" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580842401802">
@@ -133,22 +134,22 @@
       <screen x="0" y="23" width="2560" height="1347" />
     </state>
     <state x="1093" y="404" key="#com.intellij.ide.util.MemberChooser/0.23.2560.1347/-1080.23.1080.1897@0.23.2560.1347" timestamp="1580935185270" />
-    <state width="2518" height="147" key="GridCell.Tab.0.bottom" timestamp="1580939116759">
+    <state width="2518" height="147" key="GridCell.Tab.0.bottom" timestamp="1580942213172">
       <screen x="0" y="23" width="2560" height="1347" />
     </state>
-    <state width="2518" height="147" key="GridCell.Tab.0.bottom/0.23.2560.1347/-1080.23.1080.1897@0.23.2560.1347" timestamp="1580939116759" />
-    <state width="2518" height="147" key="GridCell.Tab.0.center" timestamp="1580939116759">
+    <state width="2518" height="147" key="GridCell.Tab.0.bottom/0.23.2560.1347/-1080.23.1080.1897@0.23.2560.1347" timestamp="1580942213172" />
+    <state width="2518" height="147" key="GridCell.Tab.0.center" timestamp="1580942213171">
       <screen x="0" y="23" width="2560" height="1347" />
     </state>
-    <state width="2518" height="147" key="GridCell.Tab.0.center/0.23.2560.1347/-1080.23.1080.1897@0.23.2560.1347" timestamp="1580939116759" />
-    <state width="2518" height="147" key="GridCell.Tab.0.left" timestamp="1580939116758">
+    <state width="2518" height="147" key="GridCell.Tab.0.center/0.23.2560.1347/-1080.23.1080.1897@0.23.2560.1347" timestamp="1580942213171" />
+    <state width="2518" height="147" key="GridCell.Tab.0.left" timestamp="1580942213170">
       <screen x="0" y="23" width="2560" height="1347" />
     </state>
-    <state width="2518" height="147" key="GridCell.Tab.0.left/0.23.2560.1347/-1080.23.1080.1897@0.23.2560.1347" timestamp="1580939116758" />
-    <state width="2518" height="147" key="GridCell.Tab.0.right" timestamp="1580939116759">
+    <state width="2518" height="147" key="GridCell.Tab.0.left/0.23.2560.1347/-1080.23.1080.1897@0.23.2560.1347" timestamp="1580942213170" />
+    <state width="2518" height="147" key="GridCell.Tab.0.right" timestamp="1580942213171">
       <screen x="0" y="23" width="2560" height="1347" />
     </state>
-    <state width="2518" height="147" key="GridCell.Tab.0.right/0.23.2560.1347/-1080.23.1080.1897@0.23.2560.1347" timestamp="1580939116759" />
+    <state width="2518" height="147" key="GridCell.Tab.0.right/0.23.2560.1347/-1080.23.1080.1897@0.23.2560.1347" timestamp="1580942213171" />
     <state width="2518" height="473" key="GridCell.Tab.1.bottom" timestamp="1580936903796">
       <screen x="0" y="23" width="2560" height="1347" />
     </state>
@@ -165,10 +166,14 @@
       <screen x="0" y="23" width="2560" height="1347" />
     </state>
     <state width="2518" height="473" key="GridCell.Tab.1.right/0.23.2560.1347/-1080.23.1080.1897@0.23.2560.1347" timestamp="1580936903796" />
-    <state x="945" y="330" width="670" height="676" key="search.everywhere.popup" timestamp="1580936411403">
+    <state x="789" y="335" key="SettingsEditor" timestamp="1580941593430">
       <screen x="0" y="23" width="2560" height="1347" />
     </state>
-    <state x="945" y="330" width="670" height="676" key="search.everywhere.popup/0.23.2560.1347/-1080.23.1080.1897@0.23.2560.1347" timestamp="1580936411403" />
+    <state x="789" y="335" key="SettingsEditor/0.23.2560.1347/-1080.23.1080.1897@0.23.2560.1347" timestamp="1580941593430" />
+    <state x="945" y="330" width="670" height="676" key="search.everywhere.popup" timestamp="1580941635420">
+      <screen x="0" y="23" width="2560" height="1347" />
+    </state>
+    <state x="945" y="330" width="670" height="676" key="search.everywhere.popup/0.23.2560.1347/-1080.23.1080.1897@0.23.2560.1347" timestamp="1580941635420" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/server$BaseServer.ic" NAME="BaseServer Coverage Results" MODIFIED="1580926578369" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
