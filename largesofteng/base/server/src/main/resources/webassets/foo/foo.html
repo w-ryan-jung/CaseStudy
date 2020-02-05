@@ -1,0 +1,57 @@
+<!--
+  -- This is a partial HTML file, meaning that it will be loaded dynamically and added to another HTML file.
+  -- Author: Rasmus Ros, rasmus.ros@cs.lth.se
+  -->
+<h1 class="d-sm-block d-none">Inventory</h1>
+<p><em>Foo</em> is an example of a table display. Each user has separate foos. This example will be expanded upon during
+    the labs.
+</p>
+<div>
+    <form id="foo-form">
+        <div class="form-group">
+            <select id = "foo-input1" class="browser-default custom-select custom-select-lg mb-3">
+                <option selected>Select City</option>
+                <option value="Cupertino">Cupertino</option>
+                <option value="Norrköping">Norrköping</option>
+                <option value="Frankurt">Frankurt</option>
+            </select>
+            <select id = "foo-input2" class="browser-default custom-select custom-select-lg mb-3">
+                <option selected>Select Product</option>
+                <option value="jTelefon">jTelefon</option>
+                <option value="jPlatta">jPlatta</option>
+                <option value="Päronklocka">Päronklocka</option>
+            </select>
+            <select id = "foo-input3" class="browser-default custom-select custom-select-lg mb-3">
+                <option selected>Send/Receive</option>
+                <option value="send">Send</option>
+                <option value="receive">Receive</option>
+            </select>
+            <input id = "foo-input4" class="form-control form-control-lg" type="text" placeholder="Input Amount">
+        </div>
+        <button class="form-control btn btn-primary" type="submit">Submit</button>
+    </form>
+</div>
+<div class="mt-5">
+
+    <table class="table" style="background: white">
+        <thead>
+        <tr>
+            <th scope="col">City</th>
+            <th scope="col">Product</th>
+            <th scope="col">Amount</th>
+            <th>Date</th>
+        </tr>
+        </thead>
+        <tbody>
+        <template id="foo-template">
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </template>
+        </tbody>
+    </table>
+</div>
+
