@@ -32,13 +32,14 @@ public class FooResource {
         return fooDao.addFoo(user.getId(), foo.getProductName(),foo.getCityName(),foo.getAmount());
     }
 
+
     @GET
     @Produces(MediaType.APPLICATION_JSON + ";charset=utf-8")
     @RolesAllowed(Role.Names.USER)
     public List<Foo> getFoos() {
         return fooDao.getUsersFoo(user.getId());
     }
-
+/*
     @GET
     @Produces(MediaType.APPLICATION_JSON + ";charset=utf-8")
     @RolesAllowed(Role.Names.ADMIN)
@@ -53,5 +54,5 @@ public class FooResource {
     @Path("all")
     public List<Foo> getAllFoos() {
         return fooDao.getAllFoo();
-    }
+    }*/
 }

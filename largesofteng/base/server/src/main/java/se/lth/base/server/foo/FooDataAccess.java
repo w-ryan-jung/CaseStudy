@@ -1,8 +1,8 @@
 package se.lth.base.server.foo;
 
-import se.lth.base.server.user.UserDataAccess;
 import se.lth.base.server.database.DataAccess;
 import se.lth.base.server.database.Mapper;
+import se.lth.base.server.user.UserDataAccess;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -52,12 +52,12 @@ public class FooDataAccess extends DataAccess<Foo> {
         return new Foo(fooId, userId, created, productName, cityName, amount);
     }
 
-    /**
-     * @return all foo payload for all users.
-     */
-    public List<Foo> getAllFoo() {
-        return query("SELECT * FROM foo");
-    }
+//    /**
+//     * @return all foo payload for all users.
+//     */
+//    public List<Foo> getAllFoo() {
+//        return query("SELECT * FROM foo");
+//    }
 
     /**
      * Get all foo payload created by a user.
@@ -69,10 +69,11 @@ public class FooDataAccess extends DataAccess<Foo> {
         return query("SELECT * FROM foo WHERE user_id = ?", userId);
     }
 
-    public List<Foo> getAllFooGroupByCity(){
-        return query("SELECT * FROM foo ORDER BY cityName");
-    }
-    public List<Foo> getAllFooGroupByProduct(){
-        return query("SELECT productName, cityName, SUM(amount) AS amount, created FROM foo GROUP BY productName");
-    }
+
+//    public List<Foo> getAllFooGroupByCity(){
+//        return query("");
+//    }
+//    public List<Foo> getAllFooGroupByProduct(){
+//        return query("SELECT productName, cityName, SUM(amount) AS amount, created FROM foo GROUP BY productName");
+//    }
 }
