@@ -30,27 +30,33 @@
         <button class="form-control btn btn-warning" type="submit">Submit</button>
     </form>
 </div>
-<div class="mt-5">
 
-    <table class="table" style="background: white">
-        <thead>
+<div class="mt-5">
+    <select class="custom-select custom-select-sm">
+        <option selected>Report by city / product</option>
+        <option value="1">City</option>
+        <option value="2">Product</option>
+    </select>
+    <table class="table table-bordered" >
+        <thead align="center" class = "thead-light">
         <tr>
             <th scope="col">City</th>
             <th scope="col">Product</th>
             <th scope="col">Amount</th>
-            <th>Date</th>
+            <th scope="col">Date</th>
         </tr>
         </thead>
         <tbody>
         <template id="foo-template">
             <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td align="right"></td>
+                <td align="right"></td>
+                <td align="right"></td>
+                <td align="right"></td>
             </tr>
         </template>
         </tbody>
     </table>
+
 </div>
 
