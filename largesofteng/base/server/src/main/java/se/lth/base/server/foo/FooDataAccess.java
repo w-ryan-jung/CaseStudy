@@ -68,4 +68,11 @@ public class FooDataAccess extends DataAccess<Foo> {
     public List<Foo> getUsersFoo(int userId) {
         return query("SELECT * FROM foo WHERE user_id = ?", userId);
     }
+
+    public List<Foo> getAllFooGroupByCity(){
+        return query("SELECT * FROM foo ORDER BY cityName");
+    }
+    public List<Foo> getAllFooGroupByProduct(){
+        return query("SELECT productName, cityName, SUM(amount) AS amount, created FROM foo GROUP BY productName");
+    }
 }
