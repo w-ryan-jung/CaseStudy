@@ -1,21 +1,9 @@
 package se.lth.base.server.foo;
 
-import org.junit.Before;
-import org.junit.Test;
 import se.lth.base.server.BaseResourceTest;
 
-import javax.ws.rs.ForbiddenException;
-import javax.ws.rs.client.Entity;
-import javax.ws.rs.core.GenericType;
-import java.util.Collections;
-import java.util.List;
-
-import static junit.framework.TestCase.assertEquals;
-import static junit.framework.TestCase.assertTrue;
-import static org.junit.Assert.assertNotEquals;
-
 public class FooResourceTest extends BaseResourceTest {
-
+/*
     private static final GenericType<List<Foo>> FOO_LIST = new GenericType<List<Foo>>() {
     };
 
@@ -97,5 +85,5 @@ public class FooResourceTest extends BaseResourceTest {
                 .request()
                 .get(FOO_LIST);
         //assertEquals("tests", testsFoos.get(0).getPayload());
-    }
+    }*/
 }

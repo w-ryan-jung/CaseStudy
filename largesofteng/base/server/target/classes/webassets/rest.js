@@ -188,12 +188,13 @@ base.rest = (function() {
          * example: const myNewFoo = base.rest.addFoo({'payload': 'i wrote this in the input field'});
          */
         addFoo: function(foo) {
-            return baseFetch('/rest/foo', {
-                    method: 'POST',
-                    body: JSON.stringify(foo),
-                    headers: jsonHeader})
+            var result = baseFetch('/rest/foo', {
+                method: 'POST',
+                body: JSON.stringify(foo),
+                headers: jsonHeader})
                 .then(response => response.json())
                 .then(f => new Foo(f));
+            return result
         },
 
         /*

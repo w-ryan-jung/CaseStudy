@@ -28,8 +28,8 @@ public class FooDataAccess extends DataAccess<Foo> {
             return new Foo(resultSet.getInt("foo_id"),
                     resultSet.getInt("user_id"),
                     resultSet.getObject("created", Date.class).getTime(),
-                    resultSet.getString("productName"),
                     resultSet.getString("cityName"),
+                    resultSet.getString("productName"),
                     resultSet.getInt("amount"));
         }
     }
@@ -42,22 +42,21 @@ public class FooDataAccess extends DataAccess<Foo> {
      * Add new foo payload connected to a user.
      *
      * @param userId  user to add payload to.
-     * @param payload new payload to append.
      * @return the created foo object, containing additionally created date and the id of the foo.
      */
-    public Foo addFoo(int userId, String productName, String cityName, int amount) {
+    public Foo addFoo(int userId, String cityName, String productName, int amount) {
         long created = System.currentTimeMillis();
-        int fooId = insert("INSERT INTO foo (user_id, productName, cityName, amount, created) VALUES (?,?,?,?,?)",
-                userId, productName, cityName, amount, new Date(created));
-        return new Foo(fooId, userId, created, productName, cityName, amount);
+        int fooId = insert("INSERT INTO foo (user_id, cityName, productName, amount, created) VALUES (?,?,?,?,?)",
+                userId, cityName, productName, amount, new Date(created));
+        return new Foo(fooId, userId, created, cityName, productName, amount);
     }
 
-//    /**
-//     * @return all foo payload for all users.
-//     */
-//    public List<Foo> getAllFoo() {
-//        return query("SELECT * FROM foo");
-//    }
+    /**
+     * @return all foo payload for all users.
+     */
+    public List<Foo> getAllFoo() {
+        return query("SELECT * FROM foo");
+    }
 
     /**
      * Get all foo payload created by a user.
@@ -70,10 +69,7 @@ public class FooDataAccess extends DataAccess<Foo> {
     }
 
 
-//    public List<Foo> getAllFooGroupByCity(){
-//        return query("");
-//    }
-//    public List<Foo> getAllFooGroupByProduct(){
-//        return query("SELECT productName, cityName, SUM(amount) AS amount, created FROM foo GROUP BY productName");
-//    }
+    public List<Foo> getAllFooGroupBy(){
+        return query("select cityName, productName, sum(amount) as total from foo group by cityName, productName;");
+    }
 }

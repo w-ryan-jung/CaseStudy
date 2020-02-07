@@ -54,8 +54,10 @@ CREATE TABLE foo(
     -- Here are some additional constraints that the data must relate to:
 
 
-    productName VARCHAR NOT NULL,
-    cityName Varchar NOT NULL,
+    cityName VARCHAR(20) NOT NULL,
+
+    productName VARCHAR(20) NOT NULL,
+
     amount INT NOT NULL,
 
 
@@ -71,15 +73,15 @@ CREATE TABLE foo(
 );
 
 CREATE TABLE product(
-    product_id INT,
-    name VARCHAR NOT NULL,
+    product_id INT AUTO_INCREMENT,
+    name VARCHAR(20) NOT NULL,
     price INT,
     PRIMARY KEY(product_id)
 );
 
 CREATE TABLE city(
     id INT AUTO_INCREMENT,
-    name VARCHAR NOT NULL,
+    name VARCHAR(20) NOT NULL,
     PRIMARY KEY(id)
 );
 

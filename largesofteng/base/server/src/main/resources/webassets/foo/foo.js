@@ -71,21 +71,26 @@ base.fooController = function() {
         // Add a new foo to the table, based on the text content in the input field.
         submitFoo: function() {
             // Fetch an object reference to the input element with id 'foo-input' using the DOM API.
-            const input1 = document.getElementById('foo-input1');
-            const input2 = document.getElementById('foo-input2');
-            const input3 = document.getElementById('foo-input3');
-            const input4 = document.getElementById('foo-input4');
-            if(input3.value === "send"){
-                input4.value = (input4.value * -1);
+            const city = document.getElementById('city');
+            const product = document.getElementById('product');
+            const inAndOut = document.getElementById('in-out');
+            const amount = document.getElementById('amount');
+            if(inAndOut.value === '-1'){
+                amount.value = (amount.value * -1);
             }
+
+            const postData = {"cityName":city.value, "productName":product.value, "amount": amount.value};
             // Call the REST API, see file rest.js for definitions.
-            base.rest.addFoo({cityName: input2.value, productName: input1.value, amount: input4.value})
+            base.rest.addFoo(postData)
                 .then(function(foo) {
                     // Foo is the response from the server, it will have this form:
                     // {id: 123, userId: 1, payload: 'data', created: 1525343407}
                     const vm = new FooViewModel(foo);
                     model.push(vm);          // append the foo to the end of the model array
                     vm.render(view.template());             // append the foo to the table
+                    if(inAndOut.value === '-1'){
+                        amount.value = (amount.value * -1);
+                    }
                 });
         }
     };

@@ -29,7 +29,7 @@ public class FooResource {
     @Consumes(MediaType.APPLICATION_JSON + ";charset=utf-8")
     @RolesAllowed(Role.Names.USER)
     public Foo addFoo(Foo foo) {
-        return fooDao.addFoo(user.getId(), foo.getProductName(),foo.getCityName(),foo.getAmount());
+        return fooDao.addFoo(user.getId(), foo.getCityName(), foo.getProductName(),foo.getAmount());
     }
 
 
@@ -39,7 +39,7 @@ public class FooResource {
     public List<Foo> getFoos() {
         return fooDao.getUsersFoo(user.getId());
     }
-/*
+
     @GET
     @Produces(MediaType.APPLICATION_JSON + ";charset=utf-8")
     @RolesAllowed(Role.Names.ADMIN)
@@ -54,5 +54,5 @@ public class FooResource {
     @Path("all")
     public List<Foo> getAllFoos() {
         return fooDao.getAllFoo();
-    }*/
+    }
 }

@@ -2,22 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a6f15bc8-ecf0-47a5-925c-15301281f04c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/lth/base/server/foo/Foo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/lth/base/server/foo/Foo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/se/lth/base/server/foo/FooDataAccess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/lth/base/server/foo/FooDataAccess.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/se/lth/base/server/foo/FooResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/lth/base/server/foo/FooResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/webassets/admin/user-admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/webassets/admin/user-admin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/se/lth/base/server/database/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/se/lth/base/server/database/schema.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/webassets/foo/foo.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/webassets/foo/foo.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/webassets/foo/foo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/webassets/foo/foo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/webassets/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/webassets/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/webassets/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/webassets/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/webassets/login/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/webassets/login/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/webassets/admin/user-admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webassets/admin/user-admin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/webassets/rest.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/webassets/rest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/se/lth/base/server/foo/FooResourceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/se/lth/base/server/foo/FooResourceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/se/lth/base/server/database/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/se/lth/base/server/database/schema.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/se/lth/base/server/foo/Foo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/se/lth/base/server/foo/Foo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/se/lth/base/server/foo/FooDataAccess$FooMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/se/lth/base/server/foo/FooDataAccess$FooMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/se/lth/base/server/foo/FooDataAccess.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/se/lth/base/server/foo/FooDataAccess.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/se/lth/base/server/foo/FooResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/se/lth/base/server/foo/FooResource.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/webassets/foo/foo.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webassets/foo/foo.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/webassets/foo/foo.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webassets/foo/foo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/webassets/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webassets/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/webassets/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webassets/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/webassets/login/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webassets/login/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/webassets/rest.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webassets/rest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/se/lth/base/server/foo/FooResourceTest$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/se/lth/base/server/foo/FooResourceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/se/lth/base/server/foo/FooResourceTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,10 +93,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Credentials" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="se.lth.base.server.user.Credentials" />
+      <module name="server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="se.lth.base.server.user.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.BaseServer" />
         <item itemvalue="Application.CreateSchema" />
+        <item itemvalue="Application.Credentials" />
       </list>
     </recent_temporary>
   </component>
@@ -143,21 +160,29 @@
       <screen x="0" y="23" width="2560" height="1347" />
     </state>
     <state x="1093" y="404" key="#com.intellij.ide.util.MemberChooser/0.23.2560.1347/-1080.23.1080.1897@0.23.2560.1347" timestamp="1580935185270" />
-    <state width="2518" height="147" key="GridCell.Tab.0.bottom" timestamp="1580980010663">
-      <screen x="0" y="23" width="2560" height="1347" />
+    <state width="1238" height="231" key="GridCell.Tab.0.bottom" timestamp="1581057195813">
+      <screen x="0" y="23" width="1280" height="733" />
     </state>
+    <state width="1238" height="231" key="GridCell.Tab.0.bottom/0.23.1280.733@0.23.1280.733" timestamp="1581057195813" />
+    <state width="1238" height="231" key="GridCell.Tab.0.bottom/0.23.1280.734@0.23.1280.734" timestamp="1581057177272" />
     <state width="2518" height="147" key="GridCell.Tab.0.bottom/0.23.2560.1347/-1080.23.1080.1897@0.23.2560.1347" timestamp="1580980010663" />
-    <state width="2518" height="147" key="GridCell.Tab.0.center" timestamp="1580980010662">
-      <screen x="0" y="23" width="2560" height="1347" />
+    <state width="1238" height="231" key="GridCell.Tab.0.center" timestamp="1581057195812">
+      <screen x="0" y="23" width="1280" height="733" />
     </state>
+    <state width="1238" height="231" key="GridCell.Tab.0.center/0.23.1280.733@0.23.1280.733" timestamp="1581057195812" />
+    <state width="1238" height="231" key="GridCell.Tab.0.center/0.23.1280.734@0.23.1280.734" timestamp="1581057177271" />
     <state width="2518" height="147" key="GridCell.Tab.0.center/0.23.2560.1347/-1080.23.1080.1897@0.23.2560.1347" timestamp="1580980010662" />
-    <state width="2518" height="147" key="GridCell.Tab.0.left" timestamp="1580980010662">
-      <screen x="0" y="23" width="2560" height="1347" />
+    <state width="1238" height="231" key="GridCell.Tab.0.left" timestamp="1581057195812">
+      <screen x="0" y="23" width="1280" height="733" />
     </state>
+    <state width="1238" height="231" key="GridCell.Tab.0.left/0.23.1280.733@0.23.1280.733" timestamp="1581057195812" />
+    <state width="1238" height="231" key="GridCell.Tab.0.left/0.23.1280.734@0.23.1280.734" timestamp="1581057177271" />
     <state width="2518" height="147" key="GridCell.Tab.0.left/0.23.2560.1347/-1080.23.1080.1897@0.23.2560.1347" timestamp="1580980010662" />
-    <state width="2518" height="147" key="GridCell.Tab.0.right" timestamp="1580980010662">
-      <screen x="0" y="23" width="2560" height="1347" />
+    <state width="1238" height="231" key="GridCell.Tab.0.right" timestamp="1581057195813">
+      <screen x="0" y="23" width="1280" height="733" />
     </state>
+    <state width="1238" height="231" key="GridCell.Tab.0.right/0.23.1280.733@0.23.1280.733" timestamp="1581057195813" />
+    <state width="1238" height="231" key="GridCell.Tab.0.right/0.23.1280.734@0.23.1280.734" timestamp="1581057177272" />
     <state width="2518" height="147" key="GridCell.Tab.0.right/0.23.2560.1347/-1080.23.1080.1897@0.23.2560.1347" timestamp="1580980010662" />
     <state width="2518" height="473" key="GridCell.Tab.1.bottom" timestamp="1580977771665">
       <screen x="0" y="23" width="2560" height="1347" />
@@ -179,9 +204,14 @@
       <screen x="0" y="23" width="2560" height="1347" />
     </state>
     <state x="789" y="335" key="SettingsEditor/0.23.2560.1347/-1080.23.1080.1897@0.23.2560.1347" timestamp="1580941593430" />
-    <state x="945" y="330" width="670" height="676" key="search.everywhere.popup" timestamp="1580979122395">
-      <screen x="0" y="23" width="2560" height="1347" />
+    <state x="402" y="23" width="475" height="733" key="refactoring.ChangeSignatureDialog" timestamp="1580987291912">
+      <screen x="0" y="23" width="1280" height="733" />
     </state>
+    <state x="402" y="23" width="475" height="733" key="refactoring.ChangeSignatureDialog/0.23.1280.733@0.23.1280.733" timestamp="1580987291912" />
+    <state x="473" y="190" width="670" height="368" key="search.everywhere.popup" timestamp="1580989499690">
+      <screen x="0" y="23" width="1280" height="733" />
+    </state>
+    <state x="473" y="190" width="670" height="368" key="search.everywhere.popup/0.23.1280.733@0.23.1280.733" timestamp="1580989499690" />
     <state x="945" y="330" width="670" height="676" key="search.everywhere.popup/0.23.2560.1347/-1080.23.1080.1897@0.23.2560.1347" timestamp="1580979122395" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
