@@ -69,7 +69,5 @@ public class FooDataAccess extends DataAccess<Foo> {
     }
 
 
-    public List<Foo> getAllFooGroupBy(){
-        return query("select cityName, productName, sum(amount) as total from foo group by cityName, productName;");
-    }
+
 }

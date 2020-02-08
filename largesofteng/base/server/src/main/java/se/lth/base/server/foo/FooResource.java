@@ -55,4 +55,6 @@ public class FooResource {
     public List<Foo> getAllFoos() {
         return fooDao.getAllFoo();
     }
+
+
 }

@@ -12,6 +12,10 @@ base.rest = (function() {
         this.createdDate = new Date(this.created);
     };
 
+    const Items = function(json) {
+        Object.assign(this, json);
+    };
+
     const Role = function(role) {
         this.name = role;
         this.label = this.name[0] + this.name.toLowerCase().slice(1);
@@ -32,6 +36,7 @@ base.rest = (function() {
 
     // Expose the classes to base module, they are primarily used by the tests.
     base.Foo = Foo;
+    base.Items = Items
     base.User = User;
     base.Role = Role;
 
@@ -46,6 +51,7 @@ base.rest = (function() {
 
         return fetch(url, config)
             .then(function(response) {
+                console.log(response);
                 if (!response.ok) {
                     return new Promise((resolve) => resolve(response.json()))
                         .then(function(errorJson) {
@@ -179,6 +185,12 @@ base.rest = (function() {
             return baseFetch('/rest/foo' + postfix)
                 .then(response => response.json())
                 .then(foos => foos.map(f => new Foo(f)));
+        },
+
+        getTotalStock: function() {
+            return baseFetch('/rest/report')
+                .then(response => response.json())
+                .then(items => items.map(item => new Items(item)));
         },
 
         /*

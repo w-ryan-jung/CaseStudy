@@ -8,6 +8,10 @@ base.mainController = (function() {
             partial: 'foo/foo.html',
             controller: base.fooController
         },
+        'report':{
+            partial: 'report/report.html',
+            controller: base.reportController
+        },
         'admin': {
             partial: 'admin/user-admin.html',
             controller: base.userAdminController

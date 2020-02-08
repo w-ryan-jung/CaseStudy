@@ -24,15 +24,14 @@ base.fooController = function() {
             // TODO: Add stuff from lab 2 end-2-end task here
             template.parentElement.appendChild(clone);
         };
+
         // Update a single table row to display a foo
         this.update = function(trElement) {
             const tds = trElement.children;
             tds[0].textContent = viewModel.foo.cityName;
             tds[1].textContent = viewModel.foo.productName;
             tds[2].textContent = viewModel.foo.amount;
-
             const d = viewModel.foo.createdDate;
-            //tds[3].textContent = d.toLocaleDateString() + ' ' + d.toLocaleTimeString();
             tds[3].textContent = d.toLocaleDateString();
 
             // TODO: Add stuff from lab 1 here
