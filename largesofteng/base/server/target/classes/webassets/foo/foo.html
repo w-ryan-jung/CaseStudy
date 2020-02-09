@@ -22,8 +22,8 @@
             </select>
             <select id = "in-out" class="browser-default custom-select custom-select-lg mb-3">
                 <option selected>Send/Receive</option>
-                <option value="-1">Send</option>
-                <option value="1">Receive</option>
+                <option value="-1">OUT</option>
+                <option value="1">IN</option>
             </select>
             <input id = "amount" class="form-control form-control-lg" type="text" placeholder="Input Amount">
         </div>
@@ -32,12 +32,18 @@
 </div>
 
 <div class="mt-5">
-<!--    <select class="custom-select custom-select-sm">-->
-<!--        <option selected>Report by city / product</option>-->
-<!--        <option value="1">City</option>-->
-<!--        <option value="2">Product</option>-->
-<!--    </select>-->
-    <table class="table table-bordered" >
+
+    <form id = "display-by">
+        <select id = "query" class="custom-select custom-select-sm">
+            <option value="cityName">Order By City</option>
+            <option value="productName">Order By Product</option>
+            <option value="amount-desc" selected>Order By Amount Desc</option>
+            <option value="amount" selected>Order By Amount Asc</option>
+            <option value="created" selected>Order By Date</option>
+        </select>
+    </form>
+
+    <table id = "table" class="table table-bordered" >
         <thead align="center" class = "thead-light">
         <tr>
             <th scope="col">WareHouse</th>

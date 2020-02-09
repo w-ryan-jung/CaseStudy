@@ -51,7 +51,6 @@ base.rest = (function() {
 
         return fetch(url, config)
             .then(function(response) {
-                console.log(response);
                 if (!response.ok) {
                     return new Promise((resolve) => resolve(response.json()))
                         .then(function(errorJson) {
@@ -191,6 +190,12 @@ base.rest = (function() {
             return baseFetch('/rest/report')
                 .then(response => response.json())
                 .then(items => items.map(item => new Items(item)));
+        },
+
+        getItemsOrderBy: function(q) {
+            return baseFetch('rest/foo/order/' + q)
+                .then(response => response.json())
+                .then(foos => foos.map(f => new Foo(f)));
         },
 
         /*

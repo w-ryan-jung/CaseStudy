@@ -56,5 +56,12 @@ public class FooResource {
         return fooDao.getAllFoo();
     }
 
+    @GET
+    @Produces(MediaType.APPLICATION_JSON + ";charset=utf-8")
+    @RolesAllowed(Role.Names.ADMIN)
+    @Path("order/{q}")
+    public List<Foo> getItemsOrderBy(@PathParam("q") String q) {
+        return fooDao.getItemsOrderBy(q);
+    }
 
 }

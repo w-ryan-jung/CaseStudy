@@ -21,7 +21,6 @@ base.fooController = function() {
         this.render = function(template) {
             this.update(template.content.querySelector('tr'));
             const clone = document.importNode(template.content, true);
-            // TODO: Add stuff from lab 2 end-2-end task here
             template.parentElement.appendChild(clone);
         };
 
@@ -33,9 +32,35 @@ base.fooController = function() {
             tds[2].textContent = viewModel.foo.amount;
             const d = viewModel.foo.createdDate;
             tds[3].textContent = d.toLocaleDateString();
-
-            // TODO: Add stuff from lab 1 here
         };
+
+        this.tbUpdate = function (tr) {
+            const tds = tr.children;
+            tds[0].textContent = viewModel.foo.cityName;
+            tds[1].textContent = viewModel.foo.productName;
+            tds[2].textContent = viewModel.foo.amount;
+            const d = viewModel.foo.createdDate;
+            tds[3].textContent = d.toLocaleDateString();
+
+
+
+            let table = document.getElementById("table");
+            for(var i = 1; table.rows.length; i++){
+
+                table.rows[i].cells[0].innerHTML = viewModel.foo.cityName;
+                table.rows[i].cells[1].innerHTML = viewModel.foo.productName;
+                table.rows[i].cells[2].innerHTML = viewModel.foo.amount;
+                const d = viewModel.foo.createdDate;
+                table.rows[i].cells[3].innerHTML = d.toLocaleDateString();
+                console.log(table.rows[i].cells[0]);
+                console.log(table.rows[i].cells[1]);
+                console.log(table.rows[i].cells[2]);
+                console.log(table.rows[i].cells[3]);
+
+            }
+
+            //console.log(viewModel);
+        }
     };
 
     const view = {
@@ -45,6 +70,11 @@ base.fooController = function() {
             // See: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/template
             const t = this.template();
             model.forEach(d => d.render(t));
+        },
+
+        update: function(){
+            const t = this.template().content.querySelector('tr');
+            model.forEach(d => d.tbUpdate(t));
         },
 
         template: function() {
@@ -62,11 +92,34 @@ base.fooController = function() {
             };
             // Loads all foos from the server through the REST API, see res.js for definition.
             // It will replace the model with the foos, and then render them through the view.
-            base.rest.getFoos().then(function(foos) {
+            base.rest.getFoos()
+                .then(function(foos) {
                 model = foos.map(f => new FooViewModel(f));
                 view.render();
             });
+
+            document.getElementById('display-by').onchange = function(event){
+                const v = document.getElementById('query');
+                const query = v.options[v.selectedIndex].value;
+                base.rest.getItemsOrderBy(query)
+                    .then(function(foos) {
+                        model = foos.map(f => new FooViewModel(f));
+                        //view.update();
+
+                        let table = document.getElementById("table");
+                        for(var i = 1; table.rows.length; i++){
+
+                            table.rows[i].cells[0].innerHTML = model[i-1].foo.cityName;
+                            table.rows[i].cells[1].innerHTML = model[i-1].foo.productName;
+                            table.rows[i].cells[2].innerHTML = model[i-1].foo.amount;
+                            const d = model[i-1].foo.createdDate;
+                            table.rows[i].cells[3].innerHTML = d.toLocaleDateString();
+
+                        }
+                    });
+            };
         },
+
         // Add a new foo to the table, based on the text content in the input field.
         submitFoo: function() {
             // Fetch an object reference to the input element with id 'foo-input' using the DOM API.

@@ -69,5 +69,13 @@ public class FooDataAccess extends DataAccess<Foo> {
     }
 
 
+    public List<Foo> getItemsOrderBy(String q){
+        String query = "SELECT * FROM foo ORDER BY "+q;
+        if(q.equals("amount-desc")){
+            query = "SELECT * FROM foo ORDER BY "+"amount DESC";
+        }
+        return query(query);
+    }
+
 
 }
